@@ -27,15 +27,6 @@ ul,
 ol {
   list-style: none;
 }
-input,
-textarea,
-select,
-button {
-  outline: none;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 14px;
-  font: inherit;
-}
 input {
   line-height: normal;
 }

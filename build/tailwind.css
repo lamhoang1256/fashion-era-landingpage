@@ -414,6 +414,22 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+input,
+  textarea,
+  select,
+  button {
+  outline: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+}
+
+.layout-container {
+  width: 100%;
+  max-width: 1350px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -555,7 +571,104 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-.text-red-500 {
+.header-action-item {
+  position: relative;
+  font-weight: 500;
+}
+
+.header-action-item::after {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  height: 1.25rem;
+  width: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 209 3 / var(--tw-bg-opacity));
+  content: var(--tw-content);
+  font-size: 12px;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[94px\] {
+  height: 94px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.w-\[292px\] {
+  width: 292px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-x-\[50px\] {
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.gap-x-14 {
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
+
+.rounded-\[1000px\] {
+  border-radius: 1000px;
+}
+
+.bg-\[\#E5E5E5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-black32 {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-opacity-\[0\.7\] {
+  --tw-text-opacity: 0.7;
+}
+
+.after\:content-\[\'3\'\]::after {
+  --tw-content: '3';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'8\'\]::after {
+  --tw-content: '8';
+  content: var(--tw-content);
 }

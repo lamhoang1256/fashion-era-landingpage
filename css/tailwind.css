@@ -6,4 +6,24 @@
   body {
     font-family: "Ubuntu", sans-serif;
   }
+  input,
+  textarea,
+  select,
+  button {
+    outline: none;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+  }
+  .layout-container {
+    width: 100%;
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+@layer components {
+  .header-action-item {
+    @apply relative after:absolute after:top-[-10px] after:right-[-10px] after:w-5 after:h-5 after:rounded-full after:bg-yellowfb after:flex after:items-center after:justify-center after:text-[12px] font-medium;
+  }
 }
