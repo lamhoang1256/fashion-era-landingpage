@@ -26,4 +26,7 @@
   .header-action-item {
     @apply relative after:absolute after:top-[-10px] after:right-[-10px] after:w-5 after:h-5 after:rounded-full after:bg-yellowfb after:flex after:items-center after:justify-center after:text-[12px] font-medium;
   }
+  .button-shopnow {
+    @apply bg-[#004743] rounded-[1000px] py-6 w-[224px] text-white;
+  }
 }
