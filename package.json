@@ -4,7 +4,8 @@
   "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some,",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "npx tailwindcss -i ./css/tailwind.css -o ./build/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
