@@ -13,9 +13,6 @@ module.exports = {
         "baby-pattern": "url('/images/baby-pattern.png')",
         "review-bg": "url('/images/review-bg.png')",
       },
-      gradientColorStops: {
-        gradientBlue: "radial-gradient(64% 195.84% at 96.3% 9%, #6CDDFF 0%, #58C4E4 100%)",
-      },
     },
   },
   plugins: [],

@@ -12,13 +12,13 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./build/tailwind.css" />
-    <title>Fashion Era landingpage</title>
+    <title>Fashion Era Landingpage</title>
   </head>
   <body>
-    <header class="bg-[#f7f7f7]">
-      <nav class="layout-container h-[94px] items-center flex justify-between">
+    <header class="bg-[#f7f7f7] relative">
+      <nav class="layout-container flex items-center justify-between h-[100px]">
         <img src="./images/logo.png" alt="logo" />
-        <ul class="flex gap-x-[50px]">
+        <ul class="hidden lg:flex gap-x-[50px]">
           <li>
             <a href="#!" class="text-black32 text-xl">Men</a>
           </li>
@@ -36,7 +36,7 @@
           </li>
         </ul>
         <div
-          class="h-[50px] rounded-[1000px] px-5 w-[292px] flex items-center justify-between bg-[#E5E5E5]"
+          class="h-[50px] rounded-[1000px] px-5 w-[292px] items-center justify-between bg-[#E5E5E5] hidden lg:flex"
         >
           <input
             type="text"
@@ -45,7 +45,7 @@
           />
           <img src="./images/search.svg" alt="search" />
         </div>
-        <ul class="flex gap-x-14">
+        <ul class="gap-x-14 hidden md:flex">
           <li>
             <a href="#!" class="header-action-item after:content-['3']"
               ><img src="./images/cart.svg" alt="cart"
@@ -60,11 +60,41 @@
             <a href="#!"><img src="./images/user.svg" alt="cart" /></a>
           </li>
         </ul>
+        <button
+          class="block lg:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-200 group"
+        >
+          <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+          <div class="w-5 h-1 bg-gray-600 mb-1"></div>
+          <div class="w-5 h-1 bg-gray-600"></div>
+          <div
+            class="absolute top-0 right-full h-screen w-8/12 bg-white border opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300 z-[100]"
+          >
+            <ul class="flex flex-col gap-y-8 items-center w-full text-base cursor-pointer pt-10">
+              <li>
+                <a href="#!" class="text-black32 text-2xl">Men</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black32 text-2xl">Women</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black32 text-2xl">Kids</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black32 text-2xl">Winter</a>
+              </li>
+              <li>
+                <a href="#!" class="text-black32 text-2xl">Lifestyle</a>
+              </li>
+            </ul>
+          </div>
+        </button>
       </nav>
-      <div class="layout-container flex justify-between">
-        <div class="flex flex-col justify-center">
+      <div
+        class="layout-container flex flex-col-reverse items-center gap-y-5 lg:flex-row justify-between"
+      >
+        <div class="flex flex-col justify-center mb-20">
           <h3 class="text-[25px] text-black32 opacity-50">TRENDING COLLECTION</h3>
-          <h1 class="my-9 max-w-[552px] text-black32 text-[70px] leading-[80px]">
+          <h1 class="my-9 max-w-[552px] text-black32 text-5xl md:text-[70px] md:leading-[80px]">
             Explore Summer Collection
           </h1>
           <button class="button-shopnow-green">Shop Now</button>
@@ -75,17 +105,14 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="layout-container mt-[102px]">
-          <img src="./images/benefit.png" alt="benefit" />
-        </div>
-      </section>
       <!-- Collection -->
       <section>
-        <div class="layout-container grid grid-cols-2 gap-x-6 mt-[79px]">
-          <div class="gradientBlue h-[300px] rounded-[20px] flex justify-between">
-            <div class="pt-[30px] pl-[50px]">
-              <h2 class="text-[45px] font-bold max-w-[231px] text-white leading-[52px]">
+        <div class="layout-container grid grid-cols-1 lg:grid-cols-2 gap-6 mt-[79px]">
+          <div
+            class="gradient-blue rounded-[20px] flex flex-col-reverse p-6 pt-0 md:p-0 items-center md:flex-row justify-between"
+          >
+            <div class="pt-[30px] md:pl-[50px]">
+              <h2 class="text-[45px] font-bold md:max-w-[231px] text-white leading-[52px]">
                 Collection For Girls
               </h2>
               <h3 class="mt-[19px] text-[25px] font-medium text-white">
@@ -97,9 +124,11 @@
               <img src="./images/women-small-1.png" alt="" />
             </div>
           </div>
-          <div class="gradientYellow h-[300px] rounded-[20px] flex justify-between">
-            <div class="pt-[30px] pl-[50px]">
-              <h2 class="text-[45px] font-bold max-w-[231px] text-green00 leading-[52px]">
+          <div
+            class="gradient-yellow rounded-[20px] flex flex-col-reverse p-6 pt-0 md:p-0 items-center md:flex-row justify-between"
+          >
+            <div class="pt-[30px] md:pl-[50px]">
+              <h2 class="text-[45px] font-bold md:max-w-[231px] text-green00 leading-[52px]">
                 Collection For Men
               </h2>
               <h3 class="mt-[19px] text-[25px] font-medium text-white">
@@ -113,29 +142,35 @@
           </div>
         </div>
       </section>
+
       <!-- Sale -->
       <section>
-        <div
-          class="layout-container mt-[26px] gradientLight border-[1px] border-white rounded-[20px]"
-        >
-          <div class="bg-baby-pattern grid grid-cols-2">
-            <div class="flex flex-col items-center justify-center">
-              <h2 class="text-[60px] leading-[69px]">Baby & Kids Fashion</h2>
-              <div class="mt-[41px] relative max-w-[424px]">
-                <img src="./images/sale.png" alt="sale" />
-                <div class="absolute inset-0 flex flex-col pl-20 justify-center">
-                  <h3 class="text-[80px] font-bold leading-[92px]">SALE!</h3>
-                  <span class="text-[25px] leading-[29px] text-green00">07 to 14 Febuary </span>
+        <div class="layout-container">
+          <div class="gradient-light mt-[26px] border-[1px] border-white rounded-[20px]">
+            <div
+              class="bg-baby-pattern flex flex-col-reverse lg:flex-row justify-between py-6 lg:py-0 px-10 lg:px-28"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <h2 class="text-[40px] md:text-[60px] md:leading-[69px]">Baby & Kids Fashion</h2>
+                <div class="mt-[41px] relative max-w-[424px]">
+                  <img src="./images/sale.png" alt="sale" />
+                  <div class="absolute inset-0 flex flex-col pl-5 md:pl-20 justify-center">
+                    <h3 class="text-[30px] md:text-[80px] font-bold md:leading-[92px]">SALE!</h3>
+                    <span class="text-[24px] md:text-[25px] leading-[29px] text-green00"
+                      >07 to 14 Febuary
+                    </span>
+                  </div>
                 </div>
+                <button class="mt-[30px] button-shopnow-green">Shop now</button>
               </div>
-              <button class="mt-[30px] button-shopnow-green">Shop now</button>
-            </div>
-            <div class="flex justify-center">
-              <img src="./images/baby.png" alt="baby" />
+              <div class="flex justify-center">
+                <img src="./images/baby.png" alt="baby" />
+              </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- New Arrivals -->
       <section>
         <div class="layout-container">
@@ -144,14 +179,26 @@
             <p class="description mt-[11px]">
               Check out most promising product bought by our buyers
             </p>
-            <div class="mt-[53px] flex gap-x-[17px] justify-center">
+            <div class="mt-[53px] flex flex-wrap gap-[17px] justify-center">
               <button class="w-[100px] h-10 rounded-[1000px] text-black32 bg-yellowfb">All</button>
-              <button class="button-tab-normal">Men</button>
-              <button class="button-tab-normal">Women</button>
-              <button class="button-tab-normal">Kids</button>
+              <button
+                class="w-[100px] h-10 rounded-[1000px] text-opacity-50 border-[1px] text-black32 border-[#c4c4c4]"
+              >
+                Men
+              </button>
+              <button
+                class="w-[100px] h-10 rounded-[1000px] text-opacity-50 border-[1px] text-black32 border-[#c4c4c4]"
+              >
+                Women
+              </button>
+              <button
+                class="w-[100px] h-10 rounded-[1000px] text-opacity-50 border-[1px] text-black32 border-[#c4c4c4]"
+              >
+                Kids
+              </button>
             </div>
           </div>
-          <div class="mt-[42px] grid grid-cols-4 gap-x-[17px]">
+          <div class="mt-[42px] grid-products">
             <div>
               <div class="relative rounded-3xl overflow-hidden">
                 <div
@@ -325,6 +372,7 @@
           </div>
         </div>
       </section>
+
       <!-- Top Brands Deal -->
       <section>
         <div class="layout-container mt-[103px] pt-[41px] pb-14 bg-[#004743] rounded-[20px]">
@@ -363,6 +411,7 @@
           </div>
         </div>
       </section>
+
       <!-- Trending Collection -->
       <section>
         <div class="layout-container">
@@ -372,7 +421,7 @@
               Check out most promising product bought by our buyers
             </p>
           </div>
-          <div class="mt-[42px] grid grid-cols-4 gap-x-[17px]">
+          <div class="mt-[42px] grid-products">
             <div>
               <div class="relative rounded-3xl overflow-hidden">
                 <img src="./images/sleev.png" class="w-full" alt="product" />
@@ -536,18 +585,19 @@
           </div>
         </div>
       </section>
+
       <!-- Reviews -->
       <section class="bg-[#F9F9F9] mt-[110px]">
         <div class="layout-container pt-[74px] pb-[66px]">
           <h2 class="heading">Reviews</h2>
           <p class="description mt-[11px]">This is what our customers have to say</p>
           <div
-            class="mt-[75px] bg-review-bg bg-no-repeat mx-auto max-w-[1128px] h-[310px] p-4 flex"
+            class="mt-[75px] bg-review-bg bg-no-repeat mx-auto max-w-[1128px] p-4 flex flex-col items-center gap-y-5 lg:flex-row"
           >
             <div class="flex-shrink-0">
               <img src="./images/review-avatar.png" alt="avatar" />
             </div>
-            <div class="max-w-[570px] flex flex-col justify-between pt-[30px] pb-[45px]">
+            <div class="max-w-[570px] flex flex-col justify-between gap-y-5 pt-[30px] pb-[45px]">
               <p class="text-black32 text-xl leading-7">
                 There are many variations of passages of Lorem Ipsum available, but the majority
                 have suffered alteration in some form, by injected humour, or randomised words which
@@ -573,6 +623,7 @@
           </div>
         </div>
       </section>
+
       <!-- Subscibe Newsletter -->
       <section>
         <div class="layout-container">
@@ -583,15 +634,15 @@
               Subscribe to our email and get updates right in your inbox
             </p>
             <div
-              class="w-full rounded-[1000px] max-w-[771px] h-[130px] bg-[#F7F7F7] flex items-center justify-between p-[10px] pl-12 mt-[46px]"
+              class="w-full rounded-[1000px] max-w-[771px] h-[80px] md:h-[130px] bg-[#F7F7F7] flex items-center justify-between p-[10px] pl-12 mt-[46px]"
             >
               <input
                 type="text"
                 placeholder="Enter Your Email"
-                class="text-[25px] bg-transparent"
+                class="text-[25px] bg-transparent flex-1 w-full"
               />
               <button
-                class="w-[113px] h-[113px] rounded-full bg-yellowfb flex items-center justify-center"
+                class="w-[113px] h-[113px] rounded-full bg-yellowfb hidden md:flex items-center justify-center"
               >
                 <img src="./images/post.png" alt="subscibe" />
               </button>
@@ -617,10 +668,9 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div class="layout-container">
-        <div class="pt-[98px] pb-[104px] grid grid-cols-4 gap-x-20">
+        <div class="pt-[98px] pb-[104px] grid-products">
           <div class="pt-5">
             <img src="./images/logo.png" alt="logo" />
             <p class="mt-[22px]">
