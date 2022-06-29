@@ -47,7 +47,7 @@
     @apply font-bold text-6xl leading-[69px] text-black32 text-center;
   }
   .description {
-    @apply mt-[11px] text-xl text-opacity-50 text-black32 leading-[23px] text-center;
+    @apply text-xl text-opacity-50 text-black32 leading-[23px] text-center;
   }
   .button-tab-normal {
     @apply w-[100px] h-10 rounded-[1000px] text-opacity-50 border-[1px] text-black32 border-[#c4c4c4];
