@@ -774,6 +774,22 @@ input,
   margin-top: 75px;
 }
 
+.mt-\[46px\] {
+  margin-top: 46px;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-\[57px\] {
+  margin-top: 57px;
+}
+
+.mt-\[22px\] {
+  margin-top: 22px;
+}
+
 .flex {
   display: flex;
 }
@@ -818,6 +834,18 @@ input,
   height: 310px;
 }
 
+.h-\[130px\] {
+  height: 130px;
+}
+
+.h-\[113px\] {
+  height: 113px;
+}
+
+.h-\[51px\] {
+  height: 51px;
+}
+
 .w-\[292px\] {
   width: 292px;
 }
@@ -846,6 +874,14 @@ input,
   width: 166px;
 }
 
+.w-\[113px\] {
+  width: 113px;
+}
+
+.w-\[51px\] {
+  width: 51px;
+}
+
 .max-w-\[552px\] {
   max-width: 552px;
 }
@@ -868,6 +904,10 @@ input,
 
 .max-w-\[570px\] {
   max-width: 570px;
+}
+
+.max-w-\[771px\] {
+  max-width: 771px;
 }
 
 .flex-shrink-0 {
@@ -938,6 +978,24 @@ input,
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+
+.gap-x-\[30px\] {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .overflow-hidden {
@@ -1026,6 +1084,16 @@ input,
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F7F7F7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F3F3F3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+}
+
 .bg-baby-pattern {
   background-image: url('/images/baby-pattern.png');
 }
@@ -1044,6 +1112,14 @@ input,
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-\[10px\] {
+  padding: 10px;
 }
 
 .px-5 {
@@ -1083,6 +1159,22 @@ input,
   padding-bottom: 45px;
 }
 
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pt-\[98px\] {
+  padding-top: 98px;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-\[104px\] {
+  padding-bottom: 104px;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1115,6 +1207,10 @@ input,
 
 .text-\[30px\] {
   font-size: 30px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
 }
 
 .font-bold {
