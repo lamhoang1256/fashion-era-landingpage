@@ -4,7 +4,7 @@ Ecommerce Fashion Website Using HTML Tailwindcss
 
 ## Live demo
 
-Official website: https://lamhoang1256.github.io/fashion-era-landingpage/
+Official website: https://lamhoang1256.github.io/fashion-era-landingpage
 
 ## Author
 - Nguyễn Hoàng Lâm ( [@lamhoang1256](https://github.com/lamhoang1256) )
